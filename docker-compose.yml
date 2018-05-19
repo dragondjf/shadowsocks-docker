@@ -1,0 +1,9 @@
+version: "3.6"
+services:
+    shadowsocks-docker:
+        image: dragondjf/shadowsocks-docker:latest
+        container_name: shadowsocks-docker
+        hostname: shadowsocksserver
+        ports:
+            - 8888:8888
+        restart: always
